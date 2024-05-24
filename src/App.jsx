@@ -34,7 +34,7 @@ function App() {
       <div 
         className=' py-20 lg:p-2 h-lvh flex flex-row lg:flex-col flex-wrap justify-center items-center overflow-y-auto text-white '
         style={{
-          backgroundImage: `url(https://images.unsplash.com/photo-1544590907-d36afe5aeb96?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
+          backgroundImage: `url(https://img.freepik.com/free-vector/gradient-dynamic-wavy-background_23-2149101396.jpg?t=st=1716575385~exp=1716578985~hmac=cdc70d0a20f33f9e58c7833e938c159ef3c8196c2205c1c0acd5f75532cd4670&w=1060)`,
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
           backgroundSize: 'cover'

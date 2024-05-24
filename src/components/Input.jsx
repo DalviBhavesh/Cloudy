@@ -20,7 +20,7 @@ function Input(
                         backgroundPosition: 'center',
                         backgroundSize: 'cover'
                       }}></div> */}
-                      <img src="./src/assets/wind-power.gif" className="h-12 w-12 mx-2 shadow-lg rounded-full border-2 border-black" />
+                      <img src="https://cdn-icons-gif.flaticon.com/16046/16046904.gif" className="h-12 w-12 mx-2 shadow-lg rounded-full border-2 border-black" />
                 <h1 className="hidden lg:block text-3xl text-white ">Cloudy.io</h1>
             </div>
             

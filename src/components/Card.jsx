@@ -64,7 +64,7 @@ convertTime()
 
                     <div>
                             <div className=" flex flex-row justify-center items-center p-2">
-                                <img src="./src/assets/hot.png" alt="./src/assets/hot.png"  className="h-24 w-24 lg:h-32 lg:w-32 "/>
+                                <img src="https://cdn-icons-gif.flaticon.com/15968/15968679.gif" alt="./src/assets/hot.png"  className="h-24 w-24 lg:h-32 lg:w-32 rounded-full border-4 border-black "/>
                             </div>
                     </div>
 
@@ -130,7 +130,7 @@ convertTime()
                     </div>
                     <div className=" flex flex-col lg:flex-row justify-center item-center" >
                         <div className="flex justify-center items-center">
-                            <img src="./src/assets/humidity.png" className="w-20 m-4" />
+                            <img src="https://cdn-icons-png.freepik.com/256/8923/8923689.png?uid=R77836449&ga=GA1.2.1609911804.1708796131&semt=ais_hybrid" className="w-20 m-4" />
                         </div>
                         <div className=" flex justify-center item-center text-4xl lg:text-6xl lg:pt-8 px-2 font-extralight cursor-pointer">
                             <span className="hover:underline">{weather&&weather.cod == 200 ? JSON.stringify((weather.main.humidity)).substring(0,4) : "NA "}</span> <span className="text-lg">%</span>
@@ -146,7 +146,7 @@ convertTime()
 
                     <div className=" flex flex-col lg:flex-row justify-center item-center">
                         <div className="flex justify-center items-center">
-                            <img src="./src/assets/pressure.png" className="w-20 m-4" />
+                            <img src="https://cdn-icons-png.freepik.com/256/9189/9189764.png?uid=R77836449&ga=GA1.2.1609911804.1708796131&semt=ais_hybrid" className="w-20 m-4" />
                         </div>
                         <div className=" flex justify-center item-center text-4xl lg:text-6xl lg:pt-8 px-2 font-extralight cursor-pointer">
                             <span className="hover:underline">{weather&&weather.cod == 200 ? JSON.stringify((weather.main.pressure)) : "NA "}</span> <span className="text-lg">mbar</span>
@@ -166,7 +166,7 @@ convertTime()
 
                         <div className=" flex flex-col lg:flex-row justify-center item-center">
                             <div className="flex justify-center items-center">
-                            <img src="./src/assets/hot-air-balloon.gif" className="w-20 m-4 rounded-full border-2 border-black " />
+                            <img src="https://cdn-icons-gif.flaticon.com/16075/16075491.gif" className="w-20 m-4 rounded-full border-black border-2 " />
                             </div>
                             <div className=" flex justify-center item-center text-4xl lg:text-6xl lg:pt-8 px-2 font-extralight cursor-pointer">
                                 <span className="hover:underline">{weather&&weather.cod == 200 ? JSON.stringify((weather.wind.speed)): "NA "}</span><span className="text-lg">m/sec</span>
@@ -183,7 +183,7 @@ convertTime()
 
                         <div className=" flex flex-col lg:flex-row justify-center item-center">
                             <div className=" rounded-full flex justify-center item-center"  style={{rotate:`${(weather&&weather.cod == 200 ? weather.wind.deg : "0") +"deg"}`}}>
-                                <img src="./src/assets/direction.png" className= "w-16 m-6" />
+                                <img src="https://cdn-icons-png.freepik.com/256/2164/2164514.png?uid=R77836449&ga=GA1.2.1609911804.1708796131&semt=ais_hybrid" className= "w-20 m-4" />
                             </div>
                             <div className=" flex justify-center item-center text-4xl lg:text-6xl lg:pt-8 px-2 font-extralight cursor-pointer">
                                 <span className="hover:underline">{weather&&weather.cod == 200 ? JSON.stringify((weather.wind.deg)): "NA "}</span><span className="text-lg">{"\u00B0"}</span>
@@ -213,7 +213,7 @@ convertTime()
 
                         <div className=" flex flex-col lg:flex-row justify-center item-center">
                             <div className=" rounded-full flex justify-center item-center" >
-                                <img src="./src/assets/sunrise.png" className= "w-20 m-4 " />
+                                <img src="https://cdn-icons-png.flaticon.com/128/1146/1146824.png" className= "w-24 m-2 " />
                             </div>
                             <div className=" flex justify-center item-center text-4xl m-2 lg:m-0 lg:text-6xl lg:pt-8 px-2 font-extralight cursor-pointer">
                                 <span className="hover:underline">{weather&&weather.cod == 200 ? (convertTime(weather.sys.sunrise)): "NA"}</span><span className="text-lg">AM</span>
@@ -233,7 +233,7 @@ convertTime()
 
                         <div className=" flex flex-col lg:flex-row justify-center item-center">
                             <div className=" rounded-full flex justify-center item-center"  >
-                                <img src="./src/assets/half-moon.png" className= "w-20 m-4" />
+                                <img src="https://cdn-icons-png.flaticon.com/128/3094/3094156.png" className= "w-20 m-4" />
                             </div>
                             <div className=" flex justify-center item-center text-4xl m-2 lg:m-0 lg:text-6xl lg:pt-8 px-2 font-extralight cursor-pointer">
                                 <span className="hover:underline">{weather&&weather.cod == 200 ? (convertTime(weather.sys.sunset)): "NA"}</span><span className="text-lg">PM</span>
