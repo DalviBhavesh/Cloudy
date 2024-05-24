@@ -34,7 +34,7 @@ function App() {
       <div 
         className=' py-20 lg:p-2 h-lvh flex flex-row lg:flex-col flex-wrap justify-center items-center overflow-y-auto text-white '
         style={{
-          backgroundImage: `url(./src/assets/globe.jpg)`,
+          backgroundImage: `url(./src/globe.jpg)`,
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
           backgroundSize: 'cover'
