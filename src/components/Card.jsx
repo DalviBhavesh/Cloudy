@@ -19,7 +19,7 @@ let convertTime = (unix_timestamp)=>{
     var date = new Date(unix_timestamp * 1000);
 
     // Hours part from the timestamp
-    var hours = Math.abs(date.getHours()-12);
+    var hours = Math.abs(date.getHours()>12 ? date.getHours()-12 : date.getHours());
 
     // Minutes part from the timestamp
     var minutes = "0" + date.getMinutes();
