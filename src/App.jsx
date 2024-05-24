@@ -35,7 +35,6 @@ function App() {
         className=' py-20 lg:p-2 h-lvh flex flex-row lg:flex-col flex-wrap justify-center items-center overflow-y-auto text-white '
         style={{
           // backgroundImage: `url(https://img.freepik.com/free-vector/gradient-dynamic-wavy-background_23-2149101396.jpg?t=st=1716575385~exp=1716578985~hmac=cdc70d0a20f33f9e58c7833e938c159ef3c8196c2205c1c0acd5f75532cd4670&w=1060)`,
-          background: "rgb(52,119,211)",
           background: "radial-gradient(circle, rgba(52,119,211,1) 7%, rgba(2,3,37,1) 90%)",
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',

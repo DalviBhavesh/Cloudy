@@ -53,7 +53,7 @@ convertTime()
                     <h1 className="text-lg text font-bold ">
                         {weather&&weather.cod == 200 ? place.toUpperCase(): "Invalid Search"}
                     </h1>
-                    <div className="text-lg  text  h-7 w-10 flex justify-center item-center bg-blue-800 text-white rounded-full ">
+                    <div className="text-lg  text  h-7 w-10 flex justify-center item-center bg-black text-white rounded-full ">
                         <h1>{weather&&weather.cod == 200 ? weather.sys.country: "?"}</h1>
                     </div>
                     
