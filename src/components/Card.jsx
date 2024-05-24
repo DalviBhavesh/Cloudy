@@ -25,7 +25,7 @@ let convertTime = (unix_timestamp)=>{
     var minutes = "0" + date.getMinutes();
 
     // Seconds part from the timestamp
-    var seconds = "0" + date.getSeconds();
+    //var seconds = "0" + date.getSeconds();
 
     // Will display time in 10:30:23 format
     var formattedTime = hours + ':' + minutes.substr(-2) ;
@@ -34,7 +34,27 @@ let convertTime = (unix_timestamp)=>{
 
 }
     
-convertTime()
+// convertTime()
+let AmPm = (unix_timestamp)=>{
+    // Create a new JavaScript Date object based on the timestamp
+    // multiplied by 1000 so that the argument is in milliseconds, not seconds
+    var date = new Date(unix_timestamp * 1000);
+
+    // Hours part from the timestamp
+    var hours = Math.abs(date.getHours());
+
+    // Minutes part from the timestamp
+    //var minutes = "0" + date.getMinutes();
+
+    // Seconds part from the timestamp
+    //var seconds = "0" + date.getSeconds();
+
+    // Will display time in 10:30:23 format
+    var formattedTime = hours < 12 ? "AM" : "PM";
+
+    return formattedTime;
+
+}
     
 
     return (
@@ -216,7 +236,7 @@ convertTime()
                                 <img src="https://cdn-icons-png.flaticon.com/128/1146/1146824.png" className= "w-24 m-2 " />
                             </div>
                             <div className=" flex justify-center item-center text-4xl m-2 lg:m-0 lg:text-6xl lg:pt-8 px-2 font-extralight cursor-pointer">
-                                <span className="hover:underline">{weather&&weather.cod == 200 ? (convertTime(weather.sys.sunrise)): "NA"}</span><span className="text-lg">AM</span>
+                                <span className="hover:underline">{weather&&weather.cod == 200 ? (convertTime(weather.sys.sunrise)): "NA"}</span><span className="text-lg">{weather&&weather.cod == 200 ? (AmPm(weather.sys.sunrise)): "NA"}</span>
                             </div>
                         </div>
                     
@@ -236,7 +256,7 @@ convertTime()
                                 <img src="https://cdn-icons-png.flaticon.com/128/3094/3094156.png" className= "w-20 m-4" />
                             </div>
                             <div className=" flex justify-center item-center text-4xl m-2 lg:m-0 lg:text-6xl lg:pt-8 px-2 font-extralight cursor-pointer">
-                                <span className="hover:underline">{weather&&weather.cod == 200 ? (convertTime(weather.sys.sunset)): "NA"}</span><span className="text-lg">PM</span>
+                                <span className="hover:underline">{weather&&weather.cod == 200 ? (convertTime(weather.sys.sunset)): "NA"}</span><span className="text-lg">{weather&&weather.cod == 200 ? (AmPm(weather.sys.sunset)): "NA"}</span>
                             </div>
                         </div>
                     
